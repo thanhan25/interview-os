@@ -1,0 +1,80 @@
+{
+  "questions": [
+    {
+      "category": "1. Introductions & Behavioral",
+      "question": "Can you start by telling us a bit about yourself and why you want to join our Data Analytics team?",
+      "intent": "Evaluating your elevator pitch. Can you succinctly connect your academic background, your portfolio, and the company's specific needs?",
+      "alignment": "Blends your degree, your data pipeline portfolio, and the target Job Description.",
+      "response": "I am currently completing my degree in [Field] at [University], where I specialize in [Key Skill 1] and [Key Skill 2]. However, my real passion lies in bridging that theory with production-ready code. Over the last year, I've built [Project Example]. I want to join [Target Company] because your platform is the perfect environment for this intersection: taking massive datasets and engineering them into clean, predictive business intelligence."
+    },
+    {
+      "category": "1. Introductions & Behavioral",
+      "question": "Tell me about a time you faced a significant structural challenge and how you overcame it.",
+      "intent": "Standard behavioral check for resilience, grit, and problem-solving mindset.",
+      "alignment": "Ties into the personal narrative from your tailored Cover Letter.",
+      "response": "In my previous role/project, I faced a situation where [Describe Challenge]. This forced me to develop profound resilience. I learned to treat vulnerabilities not as permanent limitations, but as variables to be systematically mapped, managed, and optimized. When I encounter chaotic data clutter or broken schemas today, I don't see systemic friction; I see a space for high-velocity optimization."
+    },
+    {
+      "category": "2. Data Engineering & SQL",
+      "question": "Walk me through your process for cleaning and structuring a highly volatile, multi-source dataset.",
+      "intent": "Evaluating your defensive coding practices and understanding of data modeling.",
+      "alignment": "Ties to your [Data Engineering Project Name].",
+      "response": "I treat data safety defensively. In my [Project Name], I ingested raw tracking logs that frequently contained missing fields. Instead of letting the pipeline crash, I built a Python ingestion engine using explicit Try-Except blocks to catch schema violations early. Before loading into [Database/Warehouse], I use Pandas to enforce strict data typing, ensuring only 100% verified vectors enter the analytical sandbox."
+    },
+    {
+      "category": "2. Data Engineering & SQL",
+      "question": "How do you optimize query performance for large datasets that feed BI dashboards?",
+      "intent": "Testing SQL performance tuning knowledge (O-notation, Indexing).",
+      "alignment": "Ties to your work with relational modeling and database architecture.",
+      "response": "Clean data is useless if it's too slow for business users to query. I optimize my relational layers by applying strategic indexing (like B-Tree) on frequently queried columns, like primary/foreign keys. This prevents expensive full-table scans and locks retrieval performance to strict O(log n) efficiency, ensuring downstream reporting dashboards update instantly."
+    },
+    {
+      "category": "3. Predictive Analytics & ML",
+      "question": "How would you design a model to predict customer churn?",
+      "intent": "Assessing mathematical depth and probabilistic modeling choice.",
+      "alignment": "Validates your machine learning implementation skills.",
+      "response": "Simple moving averages fail to account for the non-linear nature of consumer churn. To accurately predict churn, I deploy a probabilistic framework. First, I fit a [Model Type, e.g., BG/NBD] distribution to model purchase frequency and dropout rates simultaneously. Then, I evaluate the variance to predict the probability of future transactions, providing highly reliable value horizons."
+    },
+    {
+      "category": "3. Predictive Analytics & ML",
+      "question": "What is the difference between Overfitting and Underfitting, and how do you prevent them?",
+      "intent": "Standard ML theory check.",
+      "alignment": "Ties into your Python testing and validation practices.",
+      "response": "Underfitting (high bias) happens when a model is too simple to capture the underlying trend. Overfitting (high variance) happens when a model memorizes the noise in the training data and fails on new data. To prevent overfitting, I use cross-validation (like K-Fold), apply regularization techniques (L1/L2 penalties), and ensure my pipelines hold out an isolated test set to verify generalized performance."
+    },
+    {
+      "category": "4. Stakeholder Strategy",
+      "question": "How do you explain a complex probabilistic model to a non-technical Product Owner?",
+      "intent": "Evaluating your ability to act as a 'translation layer'.",
+      "alignment": "Connects your technical work to your UI/UX and reporting skills.",
+      "response": "I view data as a translation layer. The Product Owner doesn't need to know the calculus behind the model; they need the actionable risk flag. When building dashboards, I translate dense probability distributions into clear UI heuristics—for example, converting a churn probability curve into simple 'High / Medium / Low Risk' visual cohorts."
+    },
+    {
+      "category": "5. Reverse Interview",
+      "question": "Do you have any questions for us? (Architecture)",
+      "intent": "Demonstrating that you understand modern data stacks.",
+      "alignment": "Shows high technical curiosity.",
+      "response": "Yes! I'm very interested in your internal Data Analytics Platform. What does the current underlying architecture look like? Are you primarily relying on cloud warehousing like GCP BigQuery/Snowflake, or using a hybrid environment?"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "B-Tree Indexing Optimization",
+      "definition": "A self-balancing search tree data structure that maintains sorted data and allows lookups, sequential access, insertions, and deletions in logarithmic time.",
+      "why_they_ask": "To see if you have true computational data engineering capability or if you only run basic queries on un-optimized tables.",
+      "conversational_script": "To prevent downstream business intelligence tools from experiencing lag during high-frequency reporting refreshes, I engineer structured relational layers with optimized B-Tree indexing on foreign key constraints, reducing lookup complexities to strict O(log n) efficiency."
+    },
+    {
+      "term": "Statistical Power Analysis",
+      "definition": "The calculation used to determine the minimum sample size required to detect an effect of a given size with a given degree of confidence, calculated as 1 minus the probability of a Type-II error (Beta).",
+      "why_they_ask": "To ensure you can run rigorous corporate A/B testing variations without burning corporate resources on under-sampled, compromised data campaigns.",
+      "conversational_script": "Before deploying any testing arrays out to business units, I enforce a strict data governance check. I run a programmatic statistical power analysis to isolate the precise sample size requirements needed to clear our internal test significance criteria, protecting our dashboards from Type-I and Type-II errors."
+    },
+    {
+      "term": "Type-I vs. Type-II Errors",
+      "definition": "Type-I error (False Positive) is rejecting a true null hypothesis. Type-II error (False Negative) is failing to reject a false null hypothesis.",
+      "why_they_ask": "To see if you possess the metric skepticism required to accurately evaluate platform updates without misinterpreting statistics.",
+      "conversational_script": "When tracking user testing metrics, a false positive can lead to launching an ineffective campaign, while a false negative can cause us to discard a highly profitable strategy. I implement defensive verification constraints to mitigate both errors simultaneously."
+    }
+  ]
+}

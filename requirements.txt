@@ -1,0 +1,3 @@
+# Interview.OS Dependencies
+# This project uses built-in Python standard libraries (os, re, json, argparse, datetime)
+# No external pip installations are required to run generate_prep.py.
