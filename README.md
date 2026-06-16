@@ -88,9 +88,7 @@ If this tool helped you crush your technical interview and land the job, conside
 
 [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal&style=for-the-badge)](https://paypal.me/thanhan25)
 
-
-<a href="https://www.buymeacoffee.com/thanhan25" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/thanhan25)
 
 *(Alternatively, you can star the repository—it helps just as much!)*
 
