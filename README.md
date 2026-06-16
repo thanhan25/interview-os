@@ -4,6 +4,11 @@
 
 Instead of juggling messy Google Docs or static spreadsheets, this tool compiles your target job description, portfolio alignment, and technical terminology into a self-contained "Neon Glassmorphism" Single Page Application (SPA). It runs entirely locally in your browser—no servers, no subscriptions, no internet required.
 
+<div align="center">
+  <img src="preview.PNG" alt="Interview.OS Dashboard Preview" width="100%" />
+  <p><i>Generated interactive dashboard featuring Active Recall tracking and the Terminology Vault.</i></p>
+</div>
+
 ## ✨ Features
 
 - **Zero Dependencies:** Written entirely in standard Python. No external libraries needed.
@@ -18,15 +23,12 @@ Instead of juggling messy Google Docs or static spreadsheets, this tool compiles
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/interview-os.git](https://github.com/YOUR_USERNAME/interview-os.git)
-cd interview-o
+git clone https://github.com/thanhan25/interview-os.git
 ```
 
 ### 2. Generate the Template Dashboard Instantly
 
-You don't need to write any JSON to see it in action. A pre-filled template is included. Just run the generation script from the root directory:
-
-Run the Python compilation script from the root directory, passing in your target company, the role, and the path to your new JSON file:
+You don't need to write any JSON to see it in action. A pre-filled template is included. Run the Python compilation script from the root directory, passing in a target company, role, and the template JSON:
 
 ```bash
 python generate_prep.py --company "Example Corp" --role "Data Analytics Intern" --data "data/interviews/template_example.json"
@@ -38,13 +40,13 @@ The script generates a standalone HTML file inside the `documents/targets/` dire
 
 **Windows (PowerShell):**
 
-```Powershell
+```powershell
 Start-Process .\documents\targets\2026-06-example-corp\prep_dashboard.html
 ```
 
 Mac/Linux:
 
-```Bash
+```bash
 open documents/targets/$(date +%Y-%m)-example-corp/prep_dashboard.html
 ```
 
@@ -79,6 +81,18 @@ Your input JSON file must contain two root arrays: `"questions"` and `"glossary"
 ## 🤝 Contributing
 
 Feel free to fork this repository, tweak the CSS UI inside `generate_prep.py`, or expand the JSON parsing logic. Pull requests are welcome!
+
+## ☕ Support the Project
+
+If this tool helped you crush your technical interview and land the job, consider supporting the project! Your donations keep this tool alive and continuously improving.
+
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal&style=for-the-badge)](https://paypal.me/thanhan25)
+
+
+<a href="https://www.buymeacoffee.com/thanhan25" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+
+*(Alternatively, you can star the repository—it helps just as much!)*
 
 ## 📜 License
 
